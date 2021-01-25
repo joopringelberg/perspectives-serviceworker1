@@ -1,7 +1,7 @@
 {
   "name": "perspectives-serviceworker",
   "version": "0.0.0",
-  "description": "Service worker shell for Perspectives Distributed Runtime (PDR)",
+  "description": "Service worker lets InPlace pages communicate with each other",
   "main": "dist/perspectives-serviceworker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joopringelberg/perspectives-serviceworker.git"
+    "url": "git+https://github.com/joopringelberg/perspectives-serviceworker1.git"
   },
   "keywords": [
     "perspectives"
@@ -19,9 +19,9 @@
   "license": "MIT",
   "private": true,
   "bugs": {
-    "url": "https://github.com/joopringelberg/perspectives-serviceworker/issues"
+    "url": "https://github.com/joopringelberg/perspectives-serviceworker1/issues"
   },
-  "homepage": "https://github.com/joopringelberg/perspectives-serviceworker#readme",
+  "homepage": "https://github.com/joopringelberg/perspectives-serviceworker1#readme",
   "dependencies": {
     "perspectives-core": "git+https://github.com/joopringelberg/perspectives-core.git#v0.9.0",
     "perspectives-proxy": "git+https://github.com/joopringelberg/perspectives-proxy.git#v1.7.0"
