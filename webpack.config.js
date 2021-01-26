@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    serviceWorker: "./src/service.js"
+    serviceworker: "./src/service.js"
   },
   output: {
     library: 'perspectives-[name]',
@@ -28,20 +28,5 @@ module.exports = {
           }
         ]
       }]
-  },
-  externals: {
-    // These are Affjax dependencies when running on node.
-    "xhr2-cookies": {
-      commonjs: "xhr2-cookies",
-      commonjs2: "xhr2-cookies",
-      amd: "xhr2-cookies",
-      root: "xhr2-cookies"
-    },
-    "url": {
-      commonjs: "url",
-      commonjs2: "url",
-      amd: "url",
-      root: "url"
-    }
   }
 };

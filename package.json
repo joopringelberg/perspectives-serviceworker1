@@ -22,10 +22,7 @@
     "url": "https://github.com/joopringelberg/perspectives-serviceworker1/issues"
   },
   "homepage": "https://github.com/joopringelberg/perspectives-serviceworker1#readme",
-  "dependencies": {
-    "perspectives-core": "git+https://github.com/joopringelberg/perspectives-core.git#v0.9.0",
-    "perspectives-proxy": "git+https://github.com/joopringelberg/perspectives-proxy.git#v1.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
