@@ -21,8 +21,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 //// SERVICE WORKER
 ////////////////////////////////////////////////////////////////////////////////
-
-// self.onmessage ??
+//1
+// self.onmessage( function(event)
 self.addEventListener('message', function(event)
   {
     const promise = self.clients.matchAll()
@@ -33,7 +33,8 @@ self.addEventListener('message', function(event)
           // If there is but one client, return a message immediately.
           if (clientList.length == 1)
           {
-            clientList[0].postMessage({ "messageType": "youHost" });
+            // Return the port sent by the first page. It will communicate with itself through it.
+            clientList[0].postMessage({ "messageType": "youHost", port: event.data.port }, [event.data.port]);
           }
           else
           {
@@ -46,11 +47,15 @@ self.addEventListener('message', function(event)
               }
             else
               {
-                client.postMessage( event.data );
+                client.postMessage( event.data, [event.data.port] );
               }
             });
           }
           break;
         }
+      })
+      .catch(function( error )
+      {
+        console.log( "Failing in service worker:" + error );
       });
 });
