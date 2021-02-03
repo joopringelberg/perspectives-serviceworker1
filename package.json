@@ -1,6 +1,6 @@
 {
   "name": "perspectives-serviceworker",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Service worker lets InPlace pages communicate with each other",
   "main": "dist/perspectives-serviceworker.js",
   "scripts": {
